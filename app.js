@@ -7,27 +7,22 @@ let {
 param = process.argv[2];
 
 switch (param) {
-  case "listar":
+  case "LISTAR":
     let dato = leerJSON();
     dato.forEach(function (d) {
       console.log(d.titulo);
     });
     break;
 
-  case "crear":
+  case "CREAR":
     let titulo = process.argv[3];
     let estado = "pendiente";
     escribirJSON(titulo, estado);
     break;
 
-  case "filtrar":
+  case "FILTAR":
     let filtro = process.argv[3];
     filtrarPorEstado(filtro);
-    break;
-
-  case "filtarPorTitulo":
-    let filtroTitulo = process.argv[3];
-
     break;
 
   case undefined:
