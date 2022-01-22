@@ -19,12 +19,4 @@ function filtrarPorEstado(filtro) {
   console.log(filtrarJSON);
 }
 
-// function filtrarPorTitulo(filtroTitulo) {
-//   let datos = leerJSON();
-//   let filtrarJSON = datos.filter(function (dato) {
-//     return dato.titulo === filtroTitulo;
-//   });
-//   console.log(filtrarJSON);
-// }
-
 module.exports = { leerJSON, escribirJSON, filtrarPorEstado };
