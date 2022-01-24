@@ -19,6 +19,4 @@ function filtrarPorEstado(filtro) {
   console.log(filtrarJSON);
 }
 
-let saludo = "hola"
-
 module.exports = { leerJSON, escribirJSON, filtrarPorEstado };
